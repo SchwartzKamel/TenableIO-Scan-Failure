@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tenableio-scan-failure"
+version = "0.1.0"
+description = "Code to run in serverless functions. Connects to Tenable.io and pulls down scan info, filters out only failed scans. Can also check to see if 'Agent' scans were run with an empty Agent Group."
+authors = ["lafiamafia <lafiamafia@protonmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+pandas = "^1.2.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
